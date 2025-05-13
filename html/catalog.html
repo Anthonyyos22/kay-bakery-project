@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price List - Nzisa Sweetmart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <style>
+        /* Ensure active link is styled clearly */
+        nav ul li a.active {
+            color: #ff7f50;
+            font-weight: bold;
+            border-bottom: 2px solid #ff7f50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Nzisa Sweetmart</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html" class="active">Price List</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Price List</h1>
+        </div>
+    </section>
+
+    <section class="price-list-section">
+        <div class="container">
+            <div class="price-category">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>1KG</th>
+                            <th>1.5KG</th>
+                            <th>2KG</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Basic Vanilla</td><td>2,200</td><td>3,100</td><td>3,800</td></tr>
+                        <tr><td>Belgium</td><td>2,300</td><td>3,200</td><td>4,000</td></tr>
+                        <tr><td>Berry</td><td>2,300</td><td>3,200</td><td>4,000</td></tr>
+                        <tr><td>Chuma Cake</td><td>2,400</td><td>3,400</td><td>4,200</td></tr>
+                        <tr><td>White Orange/Tangy Lemon</td><td>2,400</td><td>3,400</td><td>4,200</td></tr>
+                        <tr><td>Red Velvet</td><td>2,400</td><td>3,400</td><td>4,200</td></tr>
+                        <tr><td>Velvetti</td><td>2,400</td><td>3,400</td><td>4,200</td></tr>
+                        <tr><td>Forest</td><td>2,500</td><td>3,500</td><td>4,300</td></tr>
+                        <tr><td>Black Forest</td><td>2,500</td><td>3,500</td><td>4,300</td></tr>
+                        <tr><td>Berry</td><td>2,600</td><td>3,700</td><td>4,500</td></tr>
+                        <tr><td>Green Blueberry</td><td>2,600</td><td>3,700</td><td>4,500</td></tr>
+                        <tr><td>Blue Coconut</td><td>2,600</td><td>3,700</td><td>4,500</td></tr>
+                        <tr><td>Lemon</td><td>2,600</td><td>3,700</td><td>4,500</td></tr>
+                        <tr><td>Chocolate</td><td>2,600</td><td>3,700</td><td>4,500</td></tr>
+                        <tr><td>Fruitcake</td><td>3,500</td><td>5,500</td><td>7,000</td></tr>
+                    </tbody>
+                </table>
+                <div class="notes">
+                    <p><strong>CAKES:</strong></p>
+                    <ul>
+                        <li>Prices indicated are for standards</li>
+                        <li>Ksh.1,400 to specific flavors done with red cream frosting</li>
+                        <li>Additional customization and decoration is charged separately</li>
+                        <li>Order will be confirmed upon 50% of full payment</li>
+                    </ul>
+                    <p>Customized cupcakes are differently depending on size and frosting</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-phone"></i> +254 762 603 309</p>
+            <p><i class="fas fa-map-marker-alt"></i> Langata, Nairobi</p>
+            <p><i class="fab fa-instagram"></i> @nzisasweetmart</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nzisa Sweetmart</h3>
+                    <p>Langata, Nairobi</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Nzisa Sweetmart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/catalog.js"></script>
+
+    <!-- Highlight active nav link based on current page -->
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+bakery-website/
+├── index.html
+├── about-us/
+│   └── about.html
+├── catalog/
+│   └── catalog.html
+├── contact-us/
+│   └── contact.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── scripts.js
+└── images/
+    ├── hero.jpg
+    ├── product1.jpg
+    └── product2.jpg
